@@ -95,7 +95,7 @@ public class App : Application
         Log.Debug("Environment: {Env}", _experimentManager.CurrentEnvironment());
 #endif
     }
-
+    
     public override void OnFrameworkInitializationCompleted()
     {
         if (BluetoothImpl.HasValidDevice)
@@ -216,6 +216,11 @@ public class App : Application
         {
             PlatformImpl.MediaKeyRemote.Play();
         }
+        else if (_lastWearState != LegacyWearStates.None &&
+            e.WearState == LegacyWearStates.None && Settings.Data.PausePlaybackOnSensor)
+        {
+            PlatformImpl.MediaKeyRemote.Pause();
+        }
             
         // Update dynamic tray icon
         if (e is IBasicStatusUpdate status)
@@ -257,6 +262,7 @@ public class App : Application
             color = Settings.Data.AccentColor = Colors.Orange.ToUInt32();
         }
         FluentTheme.CustomAccentColor = Color.FromUInt32(color);
+        Resources["AccentColor"] = FluentTheme.CustomAccentColor;
     }
         
     private void TrayIcon_OnClicked(object? sender, EventArgs e)
