@@ -206,14 +206,14 @@ namespace GalaxyBudsClient.Platform.WindowsRT
                 // Perform device access checks before trying to get the device.
                 // First, we check if consent has been explicitly denied by the user.
                 var accessStatus = DeviceAccessInformation.CreateFromId(matches[0].Id).CurrentStatus;
-                if (accessStatus == DeviceAccessStatus.DeniedByUser)
-                {
-                    Log.Error($"WindowsRT.BluetoothService: Access to device explicitly denied by user");
-                    BluetoothErrorAsync?.Invoke(this,
-                        new BluetoothException(BluetoothException.ErrorCodes.ConnectFailed,
-                            "This app does not have access to connect to the remote device (please grant access in Settings > Privacy > Other Devices"));
-                    return;
-                }
+                //if (accessStatus == DeviceAccessStatus.DeniedByUser)
+                //{
+                //    Log.Error($"WindowsRT.BluetoothService: Access to device explicitly denied by user");
+                //    BluetoothErrorAsync?.Invoke(this,
+                //        new BluetoothException(BluetoothException.ErrorCodes.ConnectFailed,
+                //            "This app does not have access to connect to the remote device (please grant access in Settings > Privacy > Other Devices"));
+                //    return;
+                //}
 
                 if (accessStatus == DeviceAccessStatus.DeniedBySystem)
                 {
