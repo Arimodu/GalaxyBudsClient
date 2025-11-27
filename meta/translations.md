@@ -6,6 +6,7 @@ Translation instructions are available [in the wiki](https://github.com/ThePBone
 
 <table>
 <tr><th>Language</th><th>Progress</th><th>Missing strings</th><th>Details</th></tr>
+<tr><td>br (Brazil)</td><td>100%</td><td>No missing strings</td><td><a href="br.md">View details</a></td></tr>
 <tr><td>cn (China)</td><td>100%</td><td>No missing strings</td><td><a href="cn.md">View details</a></td></tr>
 <tr><td>cz (Czechia)</td><td>99%</td><td>4 missing string(s)</td><td><a href="cz.md">View details</a></td></tr>
 <tr><td>de (Germany)</td><td>43%</td><td>315 missing string(s)</td><td><a href="de.md">View details</a></td></tr>
@@ -22,6 +23,7 @@ Translation instructions are available [in the wiki](https://github.com/ThePBone
 <tr><td>pt (Portugal)</td><td>100%</td><td>No missing strings</td><td><a href="pt.md">View details</a></td></tr>
 <tr><td>ro (Romania)</td><td>54%</td><td>256 missing string(s)</td><td><a href="ro.md">View details</a></td></tr>
 <tr><td>ru (Russian Federation)</td><td>100%</td><td>No missing strings</td><td><a href="ru.md">View details</a></td></tr>
+<tr><td>sv (El Salvador)</td><td>100%</td><td>No missing strings</td><td><a href="sv.md">View details</a></td></tr>
 <tr><td>tr (Turkey)</td><td>100%</td><td>No missing strings</td><td><a href="tr.md">View details</a></td></tr>
 <tr><td>tw (Taiwan, Province of China)</td><td>60%</td><td>219 missing string(s)</td><td><a href="tw.md">View details</a></td></tr>
 <tr><td>ua (Ukraine)</td><td>54%</td><td>256 missing string(s)</td><td><a href="ua.md">View details</a></td></tr>
